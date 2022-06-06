@@ -519,18 +519,20 @@ label {
 
 #submit {
     border-radius: 12px;
+    -webkit-border-radius: 12px;
+    padding: 0;
     border: none;
     /* padding: 1em; */
     /* padding-left: 10px; */
     /* margin-left: 10px; */
     width: 81%;
     height: 50px;
-    background-color: white;
+    background-color: var(--secondary-color);
     color: var(--primary-color);
     font-size: 1.5em;
     font-weight: 600;
     cursor: pointer;
-    outline: 10px solid var(--secondary-color);
+    /* border: 10px solid var(--secondary-color); */
 }
 
 .content__contact--socials {
