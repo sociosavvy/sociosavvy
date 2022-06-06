@@ -511,6 +511,7 @@ label {
 
 .content__contact--form-message {
     height: 150px;
+    resize: none;
     /* text-align: left; */
     /* display: flex; */
     /* justify-content: start; */
