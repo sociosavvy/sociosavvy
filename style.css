@@ -959,6 +959,11 @@ label {
     .footer__logo--logo-img {
         width: 30px;
     }
+
+    .last-wave {
+        transform: translateY(-5px);
+        z-index: -100;
+    }
 }
 
 @media(max-width:400px) {
