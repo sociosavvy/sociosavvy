@@ -993,6 +993,7 @@ label {
     .google {
         bottom: -60px;
         width: 100%;
+        left: -100px;
     }
 
     .content__covered--content-title,
