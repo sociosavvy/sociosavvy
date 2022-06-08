@@ -61,3 +61,5 @@ document.querySelector('.theme-turq').addEventListener('click', e => {
     document.documentElement.style.setProperty('--primary-color', '#04ffb4');
     document.documentElement.style.setProperty('--secondary-color', '#b7ffda');
 })
+
+// console.log(a);

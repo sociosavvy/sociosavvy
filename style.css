@@ -5,11 +5,6 @@ body {
     /* overflow-y: scroll; */
     /* width: 100vw; */
     user-select: none;
-    background-color: #ffffff;
-    /* opacity: 0.2; */
-    background-image: radial-gradient(var(--primary-color) 0.9500000000000001px, transparent 0.9500000000000001px), radial-gradient(#444cf7 0.9500000000000001px, #ffffff 0.9500000000000001px);
-    background-size: 38px 38px;
-    background-position: 0 0, 19px 19px;
 }
 
 * {
