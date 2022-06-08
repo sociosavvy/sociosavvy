@@ -11,20 +11,24 @@
     <link rel="stylesheet" href="./services.css">
     <script src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/cffed4b148.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assests/logo-white-small.png" type="image/x-icon">
+
 </head>
 
 <body>
+
     <section class="header section">
         <div class="header__logo  header__element">
             <div class="header__logo--logo"><img src="./assests/logo.png" alt="" class="header__logo--logo-img"></div>
-            <div class="header__logo--title">SocioSavvy</div>
+            <a href="./index.html" class="header__logo--title">SocioSavvy</a>
         </div>
         <div class="header__menu header__element">
-            <div class="header__menu--element"><a href="" class="header__menu--element-link">Services</a></div>
+            <div class="header__menu--element"><a href="./services.html" class="header__menu--element-link">Services</a>
+            </div>
             <div class="header__menu--element"><a href="" class="header__menu--element-link">About us</a></div>
         </div>
         <div class="header__contact header__element">
-            <a href="#contact" class="header__contact--link">Contact us</a>
+            <a href="./index.html#contact" class="header__contact--link">Contact us</a>
         </div>
         <div class="header__ham">
             <div class="header__ham--icon">
@@ -35,7 +39,8 @@
             <div class="header__ham--menu">
                 <div class="header__ham--element"><a href="" class="header__ham--element-link">Services</a></div>
                 <div class="header__ham--element"><a href="" class="header__ham--element-link">About us</a></div>
-                <div class="header__ham--element"><a href="#contact" class="header__ham--element-link">Contact us</a>
+                <div class="header__ham--element"><a href="./index.html#contact"
+                        class="header__ham--element-link">Contact us</a>
                 </div>
                 <div class="header__ham--socials">
                     <a href="" class="header__ham--socials-element content__contact--socials-instagram"><i
@@ -51,7 +56,7 @@
             </div>
     </section>
     <section class="content section">
-        <div class="content__socials">
+        <div class="content__socials" id="social">
             <div class="content__socials--title content--section-title">Social Media Management</div>
             <div class="content__socials--cards content--cards">
                 <div class="content__socials--cards-card content--cards-card">
@@ -158,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <div class="content__ads">
+        <div class="content__ads" id="ad">
             <div class="content__ads--title content--section-title">Ads Management</div>
             <div class="content__ads--cards content--cards">
                 <div class="content__ads--cards-card content--cards-card">
@@ -216,8 +221,9 @@
                     <div class="content__ads--cards-card-logo content--cards-card-logo">
                         <i class="fa-brands icon fa-facebook-f facebook"></i>
                         <i class="fa-brands icon fa-instagram instagram"></i>
+                        <i class="fa-brands fa-whatsapp whatsapp icon"></i>
                     </div>
-                    <div class="content__ads--cards-card-name content--cards-card-name">Facebook, Instagram</div>
+                    <div class="content__ads--cards-card-name content--cards-card-name">Meta</div>
                     <ul class="content__socials--cards-card-list content--cards-card-list">
                         <li class="content__socials--cards-card-list-element content--cards-card-list-element">Lorem
                             ipsum dolor sit amet.</li>

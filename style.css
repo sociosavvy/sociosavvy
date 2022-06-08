@@ -36,6 +36,7 @@ body {
     font-weight: 800;
     font-size: 1.5em;
     color: var(--primary-color);
+    text-decoration: none;
 }
 
 .header__logo--logo-img {
@@ -207,8 +208,8 @@ body {
 }
 
 .google {
-    bottom: 2%;
-    left: 20%;
+    bottom: -5%;
+    left: 15%;
     width: 30%;
 }
 

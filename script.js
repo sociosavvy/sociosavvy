@@ -29,9 +29,18 @@ document.querySelector('.themeColors').addEventListener('mouseleave', e => {
     document.querySelector('.themeColors').style.right = '-60px';
 })
 
+var primary = getComputedStyle(document.body).getPropertyValue('--primary-color');
+var secondary = getComputedStyle(document.body).getPropertyValue('--secondary-color');
+// console.log(primary);
+// console.log(secondary);
+
 document.querySelector('.theme-red').addEventListener('click', e => {
     document.documentElement.style.setProperty('--primary-color', '#ff0000');
     document.documentElement.style.setProperty('--secondary-color', '#ffb7b7');
+    localStorage.setItem('primary', '#ff0000');
+    localStorage.setItem('secondary', '#ffb7b7');
+    // console.log(primary);
+    // console.log(secondary);
 })
 document.querySelector('.theme-blue').addEventListener('click', e => {
     document.documentElement.style.setProperty('--primary-color', '#0080ff');

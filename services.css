@@ -90,6 +90,8 @@
     color: #D7426D;
     padding: 0.3em;
     border-radius: 12px;
+    margin-right: 10px;
+
     /* max-width: 50px; */
 }
 
@@ -140,6 +142,16 @@
     border-radius: 12px;
     /* max-width: 50px; */
 }
+
+.whatsapp {
+    background-color: #d1ffda;
+    color: #51F06D;
+    padding: 0.3em;
+    border-radius: 12px;
+    /* max-width: 50px; */
+}
+
+
 
 @media(max-width:1120px) {
     .content--cards {
