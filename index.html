@@ -10,11 +10,63 @@
     <link rel="stylesheet" href="./theme.css">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/cffed4b148.js" crossorigin="anonymous"></script>
-    <script src="./script.js" defer></script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
+
 </head>
 
 <body>
-
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <div class="themeColors">
         <div class="theme-red themeColor"></div>
         <div class="theme-blue themeColor"></div>
@@ -151,36 +203,39 @@
         </svg>
 
         <div class="content__section content__contact" id="contact">
-            <form action="" class="content__contact--form">
+            <form action="https://formspree.io/f/mayvrnvd" method="POST" class="content__contact--form">
                 <label for="name">Name</label>
-                <input id="name" type="text" class="content__contact--form-name content__contact--form-element ">
+                <input name="Name" id="name" required type="text"
+                    class="content__contact--form-name content__contact--form-element ">
                 <label for="email">Email</label>
-                <input id="email" type="email" class="content__contact--form-email content__contact--form-element">
+                <input name="Email" id="email" required type="email"
+                    class="content__contact--form-email content__contact--form-element">
                 <label for="industry">Industry</label>
-                <select id="industry" class="content__contact--form-industry content__contact--form-element">
-                    <option value="" class="">Aerospace</option>
-                    <option value="" class="">Transport</option>
-                    <option value="" class="">Computer and IT</option>
-                    <option value="" class="">Telecommunication</option>
-                    <option value="" class="">Agriculture</option>
-                    <option value="" class="">Construction</option>
-                    <option value="" class="">Education</option>
-                    <option value="" class="">Pharmaceutical</option>
-                    <option value="" class="">Food</option>
-                    <option value="" class="">Health care</option>
-                    <option value="" class="">Hospitality</option>
-                    <option value="" class="">Entertainment</option>
-                    <option value="" class="">News Media</option>
-                    <option value="" class="">Energy</option>
-                    <option value="" class="">Manufacturing</option>
-                    <option value="" class="">Music</option>
-                    <option value="" class="">Mining</option>
-                    <option value="" class="">Worldwide web</option>
-                    <option value="" class="">Electronics</option>
+                <select name="Industry" id="industry" required
+                    class="content__contact--form-industry content__contact--form-element">
+                    <option value="Aerospace" class="">Aerospace</option>
+                    <option value="Transport" class="">Transport</option>
+                    <option value="Computer and IT" class="">Computer and IT</option>
+                    <option value="Telecommunication" class="">Telecommunication</option>
+                    <option value="Agriculture" class="">Agriculture</option>
+                    <option value="Construction" class="">Construction</option>
+                    <option value="Education" class="">Education</option>
+                    <option value="Pharmaceutical" class="">Pharmaceutical</option>
+                    <option value="Food" class="">Food</option>
+                    <option value="Health care" class="">Health care</option>
+                    <option value="Hospitality" class="">Hospitality</option>
+                    <option value="Entertainment" class="">Entertainment</option>
+                    <option value="News Media" class="">News Media</option>
+                    <option value="Energy" class="">Energy</option>
+                    <option value="Manufacturing" class="">Manufacturing</option>
+                    <option value="Music" class="">Music</option>
+                    <option value="Mining" class="">Mining</option>
+                    <option value="Worldwide web" class="">Worldwide web</option>
+                    <option value="Electronics" class="">Electronics</option>
                 </select>
                 <label for="number">Phone no.</label>
                 <div class="content__contact--form-element phoneDiv">
-                    <select id="countryCode">
+                    <select id="countryCode" name="Country Code">
                         <option class="countryCodeOption" data-countryCode="GB" value="44" Selected>UK (+44)</option>
                         <option class="countryCodeOption" data-countryCode="US" value="1">USA (+1)</option>
                         <option class="countryCodeOption" data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -432,13 +487,13 @@
                         <option class="countryCodeOption" data-countryCode="ZM" value="260">Zambia (+260)</option>
                         <option class="countryCodeOption" data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                     </select>
-                    <input id="number" type="number"
+                    <input name="Number" required id="number" type="number"
                         class="content__contact--form-number content__contact--form-element">
                 </div>
                 <label for="message">Message</label>
-                <textarea id="message" type="text"
+                <textarea name="Message" required id="message" type="text"
                     class="content__contact--form-message content__contact--form-element "></textarea>
-                <button id="submit" type="submit">Contact us!</button>
+                <button id="submit" type="submit">Contact us</button>
             </form>
             <div class="content__contact--vector">
                 <img src="./assests/mail.png" alt="" class="content__contact--vector-img">
@@ -473,6 +528,9 @@
         <div class="footer__credits">2022 @ SocioSavvy</div>
         <div class="footer__tandc"><a href="" class="footer__tandc--link">Terms and conditions</a></div>
     </section>
+    <script src="./script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 
 </html>

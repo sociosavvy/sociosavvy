@@ -31,16 +31,18 @@ document.querySelector('.themeColors').addEventListener('mouseleave', e => {
 
 var primary = getComputedStyle(document.body).getPropertyValue('--primary-color');
 var secondary = getComputedStyle(document.body).getPropertyValue('--secondary-color');
-// console.log(primary);
-// console.log(secondary);
+
 
 document.querySelector('.theme-red').addEventListener('click', e => {
-    document.documentElement.style.setProperty('--primary-color', '#ff0000');
-    document.documentElement.style.setProperty('--secondary-color', '#ffb7b7');
-    localStorage.setItem('primary', '#ff0000');
-    localStorage.setItem('secondary', '#ffb7b7');
-    // console.log(primary);
-    // console.log(secondary);
+    // document.documentElement.style.setProperty('--primary-color', '#ff0000');
+    // document.documentElement.style.setProperty('--secondary-color', '#ffb7b7');
+    primary = '#ff0000'
+    secondary = '#ffb7b7'
+    localStorage.setItem(primary, '#ff0000')
+    localStorage.setItem(primary, '#ffb7b7')
+    document.documentElement.style.setProperty('--primary-color', primary);
+    document.documentElement.style.setProperty('--secondary-color', secondary);
+
 })
 document.querySelector('.theme-blue').addEventListener('click', e => {
     document.documentElement.style.setProperty('--primary-color', '#0080ff');
@@ -72,3 +74,71 @@ document.querySelector('.theme-turq').addEventListener('click', e => {
 })
 
 // console.log(a);
+
+// const form = document.querySelector('.content__contact--form');
+// form.addEventListener('submit', mail)
+
+/* paste this line in verbatim */
+window.formbutton = window.formbutton || function () {
+    (formbutton.q = formbutton.q || []).push(arguments)
+};
+/* customize formbutton below*/
+formbutton("create", {
+    action: "https://formspree.io/f/mayvrnvd",
+    title: "How can we help?",
+    fields: [{
+            type: "Name",
+            label: "Name",
+            name: "Name",
+            required: true,
+            placeholder: "Your name"
+        },
+        {
+            type: "Email",
+            label: "Email",
+            name: "Email",
+            required: true,
+            placeholder: "your@email.com"
+        },
+        {
+            type: "Industry",
+            label: "Industry",
+            name: "Industry",
+            // required: true,
+            // placeholder: "your@email.com"
+        },
+        {
+            type: "Country Code",
+            label: "Country Code",
+            name: "Country Code",
+            // required: true,
+            // placeholder: "your@email.com"
+        },
+        {
+            type: "Number",
+            label: "Ph. Number",
+            name: "Number",
+            // required: true,
+            // placeholder: "your@email.com"
+        },
+        {
+            type: "Message",
+            label: "Message",
+            name: "Message",
+            required: true,
+            placeholder: "Your message"
+        },
+
+        {
+            type: "submit"
+        }
+    ],
+    styles: {
+        title: {
+            backgroundColor: "gray"
+        },
+        button: {
+            backgroundColor: "gray"
+        }
+    }
+});
